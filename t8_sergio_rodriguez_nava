@@ -1,0 +1,36 @@
+﻿<DOCTYOE html>
+<html>
+<head>
+<tittle></title>
+
+</head>
+<body>
+<form action="http://andreihelo-sinatra.herokuapp.com/contact" method="GET" >
+<fieldset>
+ <legend> datos pesonales</legend>
+<label id="nombre">Nombre:</label>
+<input id="nombre" type="text" name="person[name]" placeholder="mi nombre"/><br />
+ <label>sexo:</label><br />
+<input id="ma" type="radio" name="person[genre]" value="masculino"/><label for="m">masculino</label><br />
+<input id="fem" type="radio" name="person[genre]" value="femenino"/><label for="fem">femenino</label><br />
+<input type="date" name="person[birthdate]">
+<label from="combo">ciudad</label>
+<select id="combo" name="person[city]">
+ <option value="chi">chihuahua</option>
+ <option value="del">delicias </option>
+ <option value0"parr">parral</option>
+
+</select><br/ >
+</fieldset>
+<fieldset>
+<legend>preferencias</legend>
+<input type="checkbox" name="person[preferences][]" value="codigo"/>codigo<br />
+<input type="checkbox" name="person[preferences][]" value="viudeojuegos"/>videojuegos<br />
+<input type="checkbox" name="person[preferences][]" value="gadgets"/> gadgets<br />
+<textarea name="message[]" placeholder="comentarios" rows="15" cols="60"></textarea><br />
+</fieldset>
+<input type="submit" value="conectar"/>
+<input type="reset"/>
+</form>
+</body>
+</html>
